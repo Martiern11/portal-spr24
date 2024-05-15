@@ -1,79 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <title>Your Name Goes Here</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/forms.css">
- </head>
- <body>
-     <header>
-     <h1>Your Name Goes Here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
-            <a href="#" target="_blank">Name of project goes here</a>
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
-     </header>
-     
-   <main class="wrapper">
-        <picture class="profile">
-            <source media="(min-width: 1200px)" srcset="images/desktop.jpg">
-            <source media="(min-width: 501px)" srcset="images/tablet.jpg">
-            <img src="images/phone.jpg" alt="That's me!">
-        </picture>   
-       <h2 class="subheader">About Me</h2>
-       
-       <p>We'll use this page as a place for links to the work you've done, and stand as an example of how to build a <a href="https://www.liferay.com/resources/l/web-portal" target="_blank">portal</a> page to show our projects.</p>
-       
-       <p>Watch this video, <a href="https://www.youtube.com/watch?v=ecw_ugVd81k" target="_blank">How to write a short professional bio</a> and write a few paragraphs that identify your background, skills, goals and accomplishments.</p>
-       
-       <p>Replace the pictures named <b>desktop.jpg</b>, <b>tablet.jpg</b> and <b>phone.jpg</b> in the <b>images</b> folder with pictures of yourself, or pictures that represent you.</p>
-       
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit nec purus non vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ipsum odio, lacinia congue varius in, iaculis eget felis. Proin facilisis dui nec purus viverra, sed tempus risus sollicitudin.</p>
-           
-      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce malesuada felis ac dapibus tempus. Nulla in purus id leo finibus consequat quis eget mi. In gravida maximus risus eget scelerisque. In placerat diam ut tellus ullamcorper, eu elementum augue vulputate. Cras ut pretium ante. Sed porta eros vel lobortis gravida. Nullam ultrices justo eget felis pharetra aliquam. Maecenas hendrerit hendrerit facilisis.</p>
+  <style>
+    /* global rules */
+    @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+    html {
+      background-color: #e72b45;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1cm;
+      line-height: 2cm;
+    }
+    ::selection {
+      color: aliceblue;
+      background: #ff0;
+    }
 
-       <h3>Page Origin</h3>
+    h1 {
+      font-weight: normal;
+      margin: auto;
+      background: #fff;
+      line-height: 2.5em;
+    }
+    h1.page-header {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    main.wrapper {
+      background-color: white;
+      overflow: auto;
+    }
+    p {
+      margin 1em; /* Top right Bottom Left (TRBL) */
+    }
+    h2,h3 {
+      font-weight: normal;
+      margin-left: 1em;
+      line-height: 1em;
+    }
+    a {
+      color: darkcyan;
+      text-decoration: none;
+    }
+    a:hover{
+      color: whitesmoke;
+       background-color: darkcyan;
+       text-decoration: none;
+    }
+    footer {
+      clear: both;
+      text-align: center;
+      padding: 1em;
+    }
+    /* responsive rules */
 
-       <p>The HTML/CSS comes from Sara Newman's Web Fundamentals class as taught at Seattle Central. This page provides a basis for students to build a responsive portal page.</p>
+    /* Desktop */
+    @media all and (min-width:1200px){
+      main.wrapper {
+        width: 80%;
+        margin: auto;
+      }
+      h1 {
+        width: 70%;
+        padding-left: 1%;
+      }
+      picture.profile img {
+        width: 50%;
+        float: left;
+      }
+    }
+  </style>
+  <head>
+    <title>Ernesto Martinez</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="page-header">Ernesto Martinez</h1>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a
+          href="https://martiern11.github.io/stylin-with-CSS-24-12r/"
+          target="_blank"
+          >Stylin with CSS</a
+        >
+        <a
+          href="https://martiern11.github.io/hands-on-selectors-1/"
+          target="_blank"
+          >Hands on Selector</a
+        >
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/ernesto-martinez-aaa432268/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+      </nav>
+    </header>
 
-    <p>Study how this page is built, with the <a href="https://www.youtube.com/watch?v=151NXMk0a2c" target="_blank">DOM Inspector</a> and use it as a foundation for your portal or other sites!</p>
-     <footer>
-      <p><small>&copy; 2021-<span id="this-year"></span> by 
-          YOUR NAME HERE, All Rights Reserved ~ 
-          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
-          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
-     </p>
-    </footer>
-  </main>
-     
-  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <main class="wrapper">
+      <picture class="profile">
+        <source media="(min-width: 1200px)" srcset="images/desktop.jpg" />
+        <source media="(min-width: 501px)" srcset="images/tablet.jpg" />
+        <img src="images/phone.jpg" alt="That's me!" />
+      </picture>
+      <h2 class="subheader">About Me</h2>
+      <p>This is My Bio Information</p>
+      <p>
+        <a href="https://www.liferay.com/resources/l/web-portal" target="_blank"
+          >portal</a
+        >
+        page to show our projects.
+      </p>
+      <p>
+        My name is Ernesto Martinez, and I am currently a student at Yearup for
+        the Software development track. Where I am learning HTML, CSS,
+        Javascript and Python.
+      </p>
+
+      <p>
+        I was raised and born in Mexico, specifically in Asuncion Ocotlan
+        Oaxaca, a small town in Southeast Mexico where most of my village's
+        people speak Zapotec, a native language. I moved to the United States in
+        2012 when I was 17. I finished high school in Monroe, WA, and eventually
+        continued my education at Edmonds Community College in 2014. I studied
+        music; I dropped off two years later, in 2016, to enter the workforce.
+      </p>
+      <footer>
+        <p>
+          <small
+            >&copy; 2021-<span id="this-year"></span> by Ernesto Martinez, All
+            Rights Reserved ~
+            <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
+            <a id="css-checker" href="#" target="_blank">Check CSS</a></small
+          >
+        </p>
+      </footer>
+    </main>
+
+    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
     <script>
-    //https://tinyurl.com/dynamic-html-checker
-    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
-      
-    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
-     
-     //set current year in span with id of this-year
-     let d = new Date(); let thisYear = d.getFullYear();
-     document.getElementById("this-year").innerHTML = thisYear;
-    
-    //manages mobile nav 
-    function myFunction() {
+      //https://tinyurl.com/dynamic-html-checker
+      document
+        .getElementById("html-checker")
+        .setAttribute(
+          "href",
+          "https://validator.w3.org/nu/?doc=" + location.href
+        );
+
+      document
+        .getElementById("css-checker")
+        .setAttribute(
+          "href",
+          "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
+        );
+
+      //set current year in span with id of this-year
+      let d = new Date();
+      let thisYear = d.getFullYear();
+      document.getElementById("this-year").innerHTML = thisYear;
+
+      //manages mobile nav
+      function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
-            x.className += " responsive";
+          x.className += " responsive";
         } else {
-            x.className = "topnav";
+          x.className = "topnav";
         }
-    }   
- </script>
-     
- </body>
+      }
+    </script>
+  </body>
 </html>
